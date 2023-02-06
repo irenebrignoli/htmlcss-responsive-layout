@@ -4,22 +4,6 @@
   box-sizing: border-box;
 }
 
-
-/* debug */
-
-
-.debug .top-bar *{
-  background-color: var(--primary-light-color);
-}
-
-.debug #intro .card{
-  background-color: var(--primary-light-color);
-  height: 9rem;
-}
-
-/* regole css */
-
-
 :root{
   --primary-color: #0084fd;
   --primary-light-color: #b5ddff;
@@ -27,14 +11,51 @@
   --secondary-light-color: #d4d3f4;
 }
 
+html{
+  font-family: sans-serif;
+}
+
+
+/* debug */
+
+
+.debug-box{
+  background-color: var(--primary-light-color);
+  height: 5rem;
+}
+
+.debug-box2{
+  background-color: var(--secondary-light-color);
+  height: 9rem;
+}
+
+
+/* Regole comuni */
+
+
+.text-align-center{
+  text-align: center;
+}
+
+.card, .col{
+  margin-top: 1rem;
+}
+
+
+/* Regole di base - mobile first */
+
+
 .container{
   margin: auto;
+  width: 100%;
+  padding: 0 1.2rem;
 }
 
 #site-header{
   background-color: var(--primary-color);
   height: 6.25rem;
   position: fixed;
+  z-index: 999;
   width: 100%;
   left:0;
   top:0;
@@ -48,33 +69,30 @@
 }
 
 main{
-  padding-top: 9rem;
+  padding-top: 4rem;
 }
 
-#intro .card{
-  margin: 0.6rem;
+section{
+  padding: 4rem 0;
 }
 
-
-
-/* media queries */
-
-
-@media screen and (max-width: 768px){
-
-  .container{
-    width: 100%;
-    padding: 0 1.2rem;
-  }
+#planning{
+  background-color: var(--secondary-color);
 }
 
 
+/* MEDIA-QUERIES */
 
+/* Regole per tablet - da 768px */
 
 @media screen and (min-width: 768px){
 
   .container{
     max-width: 738px;
+  }
+
+  section{
+    padding: 6rem 0;
   }
 
   #intro .cards{
@@ -85,19 +103,44 @@ main{
   
   #intro .card{
     width: calc((100% / 3) - 1.2rem);
+    margin: 0.6rem;
   }
 
   #intro .card:first-child{
     width: calc((100% / 3 * 2) - 1.2rem);
   }
+
+  #testimonials .card{
+    display: flex;
+  }
+
+  blockquote{
+    text-align: left;
+  }
 }
 
 
 
+/* Regole per pc - da 992px */
 
 @media screen and (min-width: 992px){
 
   .container{
     max-width: 952px;
+  }
+
+  #intro .card:first-child{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .columns{
+    display: flex;
+    justify-content: center;
+    margin: 0 1.2rem;
+  }
+
+  .columns .col{
+    margin: 0 1.5rem;
   }
 }
