@@ -26,7 +26,7 @@ html{
 
 .debug-box2{
   background-color: var(--secondary-light-color);
-  height: 9rem;
+  height: 10rem;
 }
 
 
@@ -41,6 +41,9 @@ html{
   margin-top: 1rem;
 }
 
+.white{
+  color: #fff;
+}
 
 /* Regole di base - mobile first */
 
@@ -76,9 +79,15 @@ section{
   padding: 4rem 0;
 }
 
-#planning{
+#planning, #work-with-us, .get-started{
   background-color: var(--secondary-color);
 }
+
+footer{
+  background-color: #333333;
+  padding: 3rem 0;
+}
+
 
 
 /* MEDIA-QUERIES */
@@ -117,6 +126,27 @@ section{
   blockquote{
     text-align: left;
   }
+
+  #work-with-us .cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.8rem;
+  }
+
+  #work-with-us .card{
+    width: calc(50% - 1.6rem);
+    margin: 0.8rem;
+  }
+
+  #about-us .columns{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about-us .col{
+    margin: 0 2rem;
+  }
+
 }
 
 
@@ -134,13 +164,17 @@ section{
     justify-content: space-between;
   }
 
-  .columns{
+  #planning .columns{
     display: flex;
     justify-content: center;
     margin: 0 1.2rem;
   }
 
-  .columns .col{
+  #planning .columns .col{
     margin: 0 1.5rem;
+  }
+
+  #work-with-us .card{
+    width: calc((100% / 3) - 1.6rem);
   }
 }
