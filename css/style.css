@@ -12,6 +12,10 @@
   background-color: var(--primary-light-color);
 }
 
+.debug #intro .card{
+  background-color: var(--primary-light-color);
+  height: 9rem;
+}
 
 /* regole css */
 
@@ -30,6 +34,10 @@
 #site-header{
   background-color: var(--primary-color);
   height: 6.25rem;
+  position: fixed;
+  width: 100%;
+  left:0;
+  top:0;
 }
 
 #site-header .top-bar{
@@ -39,7 +47,17 @@
   align-items: center;
 }
 
+main{
+  padding-top: 9rem;
+}
 
+#intro .cards{
+  margin: -1rem;
+}
+
+#intro .card{
+  margin: 1rem;
+}
 
 /* media queries */
 
@@ -48,7 +66,7 @@
 
   .container{
     width: 100%;
-    padding: 0 1.25rem;
+    padding: 0 1.2rem;
   }
 }
 
