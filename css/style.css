@@ -51,13 +51,11 @@ main{
   padding-top: 9rem;
 }
 
-#intro .cards{
-  margin: -1rem;
+#intro .card{
+  margin: 0.6rem;
 }
 
-#intro .card{
-  margin: 1rem;
-}
+
 
 /* media queries */
 
@@ -71,12 +69,31 @@ main{
 }
 
 
+
+
 @media screen and (min-width: 768px){
 
   .container{
     max-width: 738px;
   }
+
+  #intro .cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.6rem;
+  }
+  
+  #intro .card{
+    width: calc((100% / 3) - 1.2rem);
+  }
+
+  #intro .card:first-child{
+    width: calc((100% / 3 * 2) - 1.2rem);
+  }
 }
+
+
+
 
 @media screen and (min-width: 992px){
 
