@@ -3,3 +3,66 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* debug */
+
+
+.debug .top-bar *{
+  background-color: var(--primary-light-color);
+}
+
+
+/* regole css */
+
+
+:root{
+  --primary-color: #0084fd;
+  --primary-light-color: #b5ddff;
+  --secondary-color: #9792e4;
+  --secondary-light-color: #d4d3f4;
+}
+
+.container{
+  margin: auto;
+}
+
+#site-header{
+  background-color: var(--primary-color);
+  height: 6.25rem;
+}
+
+#site-header .top-bar{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* media queries */
+
+
+@media screen and (max-width: 768px){
+
+  .container{
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+
+  .container{
+    max-width: 738px;
+  }
+}
+
+@media screen and (min-width: 992px){
+
+  .container{
+    max-width: 952px;
+  }
+}
