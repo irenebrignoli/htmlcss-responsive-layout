@@ -17,24 +17,12 @@
 
 html{
   font-family: 'Open Sans', sans-serif;
-}
-
-
-/* debug */
-
-
-.debug-box{
-  background-color: var(--primary-light-color);
-  height: 5rem;
-}
-
-.debug-box2{
-  background-color: var(--secondary-light-color);
-  height: 10rem;
+  scroll-behavior: smooth;
 }
 
 
 /* Regole comuni */
+
 
 .btn{
   padding: 0.4rem 0.8rem; 
@@ -234,6 +222,7 @@ main{
 
 section{
   padding: 4rem 0;
+  scroll-margin-top: 6.3rem;
 }
 
 #intro .card{
@@ -355,6 +344,10 @@ footer{
   padding: 3rem 0;
 }
 
+footer .p-small{
+  line-height: 1.5;
+}
+
 
 
 /* MEDIA-QUERIES */
@@ -443,6 +436,11 @@ footer{
   
   #get-started p{
     margin: 0 auto 2rem auto;
+    width: 40%;
+  }
+
+  footer .container{
+    margin: 0 auto;
     width: 40%;
   }
   
