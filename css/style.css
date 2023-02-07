@@ -241,13 +241,10 @@ section{
   display: block;
   margin: 0 auto;
   width: 90%;
-}
-
-#planning img.mb-4{
   margin-bottom: 4rem;
 }
 
-#planning img.mb-1{
+#planning .col.white-color img{
   margin-bottom: 1rem;
 }
 
@@ -372,11 +369,24 @@ footer{
   #planning .columns{
     display: flex;
     justify-content: center;
-    margin: 0 1.2rem;
+    margin: 0 5rem;
   }
 
   #planning .columns .col{
     margin: 0 1.5rem;
+  }
+
+  #planning .col.white-color{
+    align-self: flex-end;
+    padding: 2rem;
+  }
+
+  #planning .col.white-color img{
+    width: 80%;
+  }
+
+  #planning h3{
+    font-size: 1.5rem;
   }
 
   #work-with-us .card{
