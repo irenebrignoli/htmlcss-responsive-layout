@@ -12,6 +12,7 @@
   --white-color: #fff;
   --black-color: #000;
   --grey-color: #5a6e7f;
+  --call-to-action-color: #fdc15f;
 }
 
 html{
@@ -44,6 +45,10 @@ html{
 
 .btn:hover{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1{
+  font-size: 3.2rem;
 }
 
 h2{
@@ -146,6 +151,10 @@ h4{
 
 .text-secondary{
   color: var(--secondary-color);
+}
+
+.text-secondary-light{
+  color: var(--secondary-light-color);
 }
 
 .text-white{
@@ -329,6 +338,13 @@ section{
   font-size: 4rem;
 }
 
+#get-started h1{
+  color: var(--call-to-action-color);
+}
+
+#get-started .btn{
+  padding: 1rem 3.2rem; 
+}
 
 
  /* ------footer */
@@ -424,7 +440,12 @@ footer{
   #about-us .business-man-col{
     margin-left: 3rem;
   }
-
+  
+  #get-started p{
+    margin: 0 auto 2rem auto;
+    width: 40%;
+  }
+  
 }
 
 
