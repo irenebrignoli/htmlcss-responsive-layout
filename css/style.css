@@ -9,6 +9,8 @@
   --primary-light-color: #b5ddff;
   --secondary-color: #9792e4;
   --secondary-light-color: #d4d3f4;
+
+  --text-white: #fff;
 }
 
 html{
@@ -37,13 +39,26 @@ html{
   text-align: center;
 }
 
-.card, .col{
-  margin-top: 1rem;
-}
+.primary-color{
+  background-color: #0084fd;
+} 
 
-.white{
+.primary-light-color{
+  background-color: #b5ddff;
+} 
+
+.secondary-color{
+  background-color: #9792e4;
+} 
+
+.secondary-light-color{
+  background-color: #d4d3f4;
+} 
+
+.text-white{
   color: #fff;
 }
+
 
 /* Regole di base - mobile first */
 
@@ -55,7 +70,6 @@ html{
 }
 
 #site-header{
-  background-color: var(--primary-color);
   height: 6.25rem;
   position: fixed;
   z-index: 999;
@@ -79,8 +93,8 @@ section{
   padding: 4rem 0;
 }
 
-#planning, #work-with-us, .get-started{
-  background-color: var(--secondary-color);
+.card, .col{
+  margin-top: 1rem;
 }
 
 footer{
