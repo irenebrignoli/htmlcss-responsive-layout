@@ -11,6 +11,7 @@
   --secondary-light-color: #d4d3f4;
   --white-color: #fff;
   --black-color: #000;
+  --grey-color: #5a6e7f;
 }
 
 html{
@@ -37,18 +38,57 @@ html{
 .btn{
   padding: 0.4rem 0.8rem; 
   border-radius: 3rem;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn:hover{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.roboto-font{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+}
+
+.extra-bold{
+  font-weight: 700;
+}
+
 .text-align-center{
   text-align: center;
 }
 
+.rounded{
+  border-radius: 1.5rem;
+}
+
 .mb-2{
   margin-bottom: 2rem;
+}
+
+.mb-1{
+  margin-bottom: 1rem;
+}
+
+h4{
+  font-size: 1.2rem;
+}
+
+.p-small{
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.card, .col{
+  margin-top: 1.2rem;
+}
+
+.card:first-child,
+.col:first-child{
+  margin-top: 0;
 }
 
 .primary-color{
@@ -81,6 +121,10 @@ html{
 
 .text-black{
   color: var(--black-color);
+}
+
+.text-grey{
+  color: var(--grey-color);
 }
 
 
@@ -124,6 +168,7 @@ html{
   padding: 0.4rem 0.7rem;
   text-decoration: none;
   color: var(--white-color);
+  display: inline-block;
 }
 
 .header-nav a:hover{
@@ -149,9 +194,29 @@ section{
   padding: 4rem 0;
 }
 
-.card, .col{
-  margin-top: 1rem;
+#intro .card{
+  padding: 2rem;
+  background-color: var(--primary-light-color);
 }
+
+#intro .card:first-child{
+  padding: 0;
+}
+
+#intro .card .text-col{
+  padding: 2rem;
+}
+
+#intro img{
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+#intro i{
+  font-size: 5rem;
+}
+
 
  /* ------footer */
 
@@ -189,6 +254,11 @@ footer{
 
   #intro .card:first-child{
     width: calc((100% / 3 * 2) - 1.2rem);
+  }
+
+  #intro img{
+    width: 50%;
+    margin-left: 2rem;
   }
 
   #testimonials .card{
@@ -241,7 +311,14 @@ footer{
 
   #intro .card:first-child{
     display: flex;
-    justify-content: space-between;
+  }
+
+  #intro img{
+    margin-right: 1rem;
+    padding-top: 3rem;
+    width: 40%;
+    align-content: flex-start;
+    align-self: flex-end;
   }
 
   #planning .columns{
@@ -267,6 +344,10 @@ footer{
 
   .container{
     max-width: 1160px;
+  }
+
+  #intro img{
+    width: 30%;
   }
 
 }
