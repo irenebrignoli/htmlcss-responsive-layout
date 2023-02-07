@@ -46,6 +46,19 @@ html{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+h4{
+  font-size: 1.2rem;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+.p-small{
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
 .roboto-font{
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
@@ -53,8 +66,16 @@ html{
   font-size: 0.9rem;
 }
 
+.bold{
+  font-weight: 600;
+}
+
 .extra-bold{
   font-weight: 700;
+}
+
+.italic{
+  font-style: italic;
 }
 
 .text-align-center{
@@ -65,25 +86,20 @@ html{
   border-radius: 1.5rem;
 }
 
-.mb-2{
-  margin-bottom: 2rem;
-}
-
 .mb-1{
   margin-bottom: 1rem;
 }
 
-h4{
-  font-size: 1.2rem;
+.mb-2{
+  margin-bottom: 2rem;
 }
 
-.p-small{
-  font-size: 0.9rem;
-  line-height: 1.8;
+.mb-4{
+  margin-bottom: 4rem;
 }
 
 .card, .col{
-  margin-top: 1.2rem;
+  margin-top: 1.3rem;
 }
 
 .card:first-child,
@@ -217,6 +233,34 @@ section{
   font-size: 5rem;
 }
 
+#planning .col.white-color{
+  padding: 1.2rem;
+}
+
+#planning img{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#planning img.mb-4{
+  margin-bottom: 4rem;
+}
+
+#planning img.mb-1{
+  margin-bottom: 1rem;
+}
+
+#planning .arrow-down{
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#planning .arrow-down i{
+  line-height: 3;
+}
 
  /* ------footer */
 
@@ -259,6 +303,10 @@ footer{
   #intro img{
     width: 50%;
     margin-left: 2rem;
+  }
+
+  #planning h3{
+    font-size: 3.5rem;
   }
 
   #testimonials .card{
