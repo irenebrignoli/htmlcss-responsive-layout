@@ -10,10 +10,7 @@
   --secondary-color: #9792e4;
   --secondary-light-color: #d4d3f4;
   --white-color: #fff;
-
-  --text-primary: #0084fd;
-  --text-white: #fff;
-  --text-black: #000;
+  --black-color: #000;
 }
 
 html{
@@ -40,6 +37,10 @@ html{
 .btn{
   padding: 0.4rem 0.8rem; 
   border-radius: 3rem;
+}
+
+.btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .text-align-center{
@@ -71,15 +72,15 @@ html{
 }
 
 .text-primary{
-  color: var(--text-primary);
+  color: var(--primary-color);
 }
 
 .text-white{
-  color: var(--text-white);
+  color: var(--white-color);
 }
 
 .text-black{
-  color: var(--text-black);
+  color: var(--black-color);
 }
 
 
@@ -92,6 +93,8 @@ html{
   padding: 0 1.2rem;
 }
 
+ /* ------header */
+
 #site-header{
   height: 6.25rem;
   position: fixed;
@@ -101,23 +104,42 @@ html{
   top:0;
 }
 
-#site-header .top-bar{
+.top-bar{
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#site-header ul{
+.top-bar .bars{
+  font-size: 1.7rem;
+}
+
+.header-nav ul{
   display: flex;
   list-style: none;
 }
 
-#site-header ul a{
-  padding: 0.4rem 0.6rem;
+.header-nav a{
+  padding: 0.4rem 0.7rem;
   text-decoration: none;
-  color: #fff;
+  color: var(--white-color);
 }
+
+.header-nav a:hover{
+  text-decoration: underline;
+}
+
+.header-nav a.btn{
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.header-nav{
+  display: none;
+}
+
+ /* ------main */
 
 main{
   padding-top: 4rem;
@@ -130,6 +152,8 @@ section{
 .card, .col{
   margin-top: 1rem;
 }
+
+ /* ------footer */
 
 footer{
   background-color: #333333;
@@ -205,6 +229,14 @@ footer{
 
   .container{
     max-width: 952px;
+  }
+
+  .top-bar .bars{
+    display: none;
+  }
+
+  .header-nav{
+    display: block;
   }
 
   #intro .card:first-child{
