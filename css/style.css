@@ -9,12 +9,15 @@
   --primary-light-color: #b5ddff;
   --secondary-color: #9792e4;
   --secondary-light-color: #d4d3f4;
+  --white-color: #fff;
 
+  --text-primary: #0084fd;
   --text-white: #fff;
+  --text-black: #000;
 }
 
 html{
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -34,6 +37,10 @@ html{
 
 /* Regole comuni */
 
+.btn{
+  padding: 0.4rem 0.8rem; 
+  border-radius: 3rem;
+}
 
 .text-align-center{
   text-align: center;
@@ -44,23 +51,35 @@ html{
 }
 
 .primary-color{
-  background-color: #0084fd;
+  background-color: var(--primary-color);
 } 
 
 .primary-light-color{
-  background-color: #b5ddff;
+  background-color: var(--primary-light-color);
 } 
 
 .secondary-color{
-  background-color: #9792e4;
+  background-color: var(--secondary-color);
 } 
 
 .secondary-light-color{
-  background-color: #d4d3f4;
+  background-color: var(--secondary-light-color);
 } 
 
+.white-color{
+  background-color: var(--white-color);
+}
+
+.text-primary{
+  color: var(--text-primary);
+}
+
 .text-white{
-  color: #fff;
+  color: var(--text-white);
+}
+
+.text-black{
+  color: var(--text-black);
 }
 
 
@@ -87,6 +106,17 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#site-header ul{
+  display: flex;
+  list-style: none;
+}
+
+#site-header ul a{
+  padding: 0.4rem 0.6rem;
+  text-decoration: none;
+  color: #fff;
 }
 
 main{
