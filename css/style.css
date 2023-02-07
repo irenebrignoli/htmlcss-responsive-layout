@@ -59,6 +59,15 @@ h3{
   line-height: 1.8;
 }
 
+.p-regular{
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
 .roboto-font{
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
@@ -129,6 +138,10 @@ h3{
 
 .text-primary{
   color: var(--primary-color);
+}
+
+.text-secondary{
+  color: var(--secondary-color);
 }
 
 .text-white{
@@ -259,6 +272,22 @@ section{
   line-height: 3;
 }
 
+#testimonials .card{
+  padding: 2rem 1rem;
+}
+
+#testimonials .card img{
+  margin-bottom: 1rem;
+  object-fit: cover;
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 50%;
+}
+
+#testimonials .quote-mark{
+  font-size: 1.2rem;
+}
+
  /* ------footer */
 
 footer{
@@ -280,6 +309,10 @@ footer{
 
   section{
     padding: 6rem 0;
+  }
+
+  h3{
+    font-size: 2.5rem;
   }
 
   #intro .cards{
@@ -308,10 +341,12 @@ footer{
 
   #testimonials .card{
     display: flex;
+    align-items: center;
   }
 
-  blockquote{
+  #testimonials blockquote{
     text-align: left;
+    margin-left: 2rem;
   }
 
   #work-with-us .cards{
@@ -387,6 +422,11 @@ footer{
 
   #planning h3{
     font-size: 1.5rem;
+  }
+
+  #testimonials blockquote{
+    text-align: left;
+    margin-left: 4rem;
   }
 
   #work-with-us .card{
